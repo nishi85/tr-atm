@@ -1,0 +1,15 @@
+# Node/JS
+node_modules/
+dist/
+coverage/
+.nyc_output/
+*.log
+
+# Env
+.env
+.env.*
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
