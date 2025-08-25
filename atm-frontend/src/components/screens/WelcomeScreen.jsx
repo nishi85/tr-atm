@@ -1,4 +1,3 @@
-// src/components/screens/WelcomeScreen.jsx
 import { useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import useScreenActions from "../../hooks/useScreenActions";

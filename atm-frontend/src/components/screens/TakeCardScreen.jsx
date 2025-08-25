@@ -1,4 +1,3 @@
-// src/components/screens/TakeCardScreen.jsx
 import { useEffect, useMemo, useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import useScreenActions from "../../hooks/useScreenActions";

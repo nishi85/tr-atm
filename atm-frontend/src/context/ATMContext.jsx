@@ -1,4 +1,3 @@
-// src/context/ATMContext.jsx
 import React, {
   createContext,
   useContext,
@@ -85,7 +84,7 @@ export function ATMProvider({ children }) {
     setLoading(true);
     try {
       // Send dollars straight-through
-      const res = await atmApi.deposit(amt); // expect { balance? }
+      const res = await atmApi.deposit(amt);
       const srv = toNum(res?.balance);
       if (Number.isFinite(srv)) {
         setBalance(srv);
@@ -116,13 +115,11 @@ export function ATMProvider({ children }) {
 
     setLoading(true);
     try {
-      // Send dollars straight-through
       const res = await atmApi.withdraw(amt); // expect { balance? }
       const srv = toNum(res?.balance);
       if (Number.isFinite(srv)) {
         setBalance(srv);
       } else {
-        // derive locally if server didn't echo balance
         setBalance((prev) => {
           const p = toNum(prev);
           if (!Number.isFinite(p)) return 0;

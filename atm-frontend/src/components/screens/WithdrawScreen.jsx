@@ -1,4 +1,3 @@
-// src/components/screens/WithdrawScreen.jsx
 import { useState, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useATM } from "../../context/ATMContext";

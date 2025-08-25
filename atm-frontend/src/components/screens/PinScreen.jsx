@@ -1,10 +1,9 @@
-// src/screens/PinScreen.jsx
 import { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useATM } from "../../context/ATMContext";
 import useScreenActions from "../../hooks/useScreenActions";
 import useScreenError from "../../hooks/useScreenError";
-import ScreenErrorOverlay from "../ScreenErrorOverlay"; // <-- adjust path if needed
+import ScreenErrorOverlay from "../ScreenErrorOverlay";
 import ATMInput from "../ATMInput";
 
 export default function PinScreen() {
@@ -30,8 +29,6 @@ export default function PinScreen() {
   const confirm = useCallback(async () => {
     const pin = pinRef.current;
     if (submitting.current || loading) return;
-    // optional extra guard:
-    // if (!pin || pin.length < 4) return;
     try {
       await enterPin(pin); // throws on error
       nav("/menu", { replace: true }); // success → menu
