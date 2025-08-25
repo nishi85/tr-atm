@@ -1,7 +1,7 @@
 .row {
   display: flex;
   align-items: center;
-  justify-content: center; /* centers the whole line */
+  justify-content: center;
   gap: 10px;
 }
 
@@ -19,8 +19,8 @@
   font-size: 18px;
   line-height: 1.2;
   padding: 0;
-  width: var(--width, 7ch); /* small, tweak via prop */
-  text-align: center; /* center the typed text */
+  width: var(--width, 7ch);
+  text-align: center;
 }
 .field::placeholder {
   color: transparent;
