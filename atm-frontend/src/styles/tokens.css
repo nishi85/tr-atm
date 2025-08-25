@@ -1,0 +1,19 @@
+:root {
+  /* colors */
+  --bg: #0d0f12;
+  --panel: #1a1a1a;
+  --text: #ffffff;
+  --muted: #9aa0a6;
+  --accent: #0b6e4f;
+  --danger: #b00020;
+  --danger-weak: #ff6b6b;
+
+  /* sizing */
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+  /* z-index scale */
+  --z-hud: 10;
+  --z-overlay: 40;
+  --z-loading: 50;
+}

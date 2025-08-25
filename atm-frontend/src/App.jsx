@@ -1,4 +1,3 @@
-// src/App.jsx
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { ATMProvider, useATM } from "./context/ATMContext";
 import { ActionsProvider } from "./context/actions";
@@ -21,7 +20,6 @@ function RequireAuth() {
   return session ? <Outlet /> : <Navigate to="/" replace />;
 }
 
-// Keep HUD/Layout mounted; boundary wraps just the Outlet subtree
 function LayoutWithBoundary() {
   return (
     <ATMLayout>
