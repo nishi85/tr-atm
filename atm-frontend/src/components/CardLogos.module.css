@@ -1,0 +1,30 @@
+.atmHeader {
+  position: relative;
+  width: 237px;
+  height: 1.2rem;
+  margin: 0.6rem auto 0.3rem;
+}
+
+.atmCardsBanner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.atmCardElement {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: var(--left);
+  width: var(--w);
+  background: #fff;
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.atmCardElement.active {
+  opacity: 0;
+}

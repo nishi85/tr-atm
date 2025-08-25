@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers the whole line */
+  gap: 10px;
+}
+
+.label {
+  color: var(--atm-color, #155e75);
+  font-size: 16px;
+}
+
+.field {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--atm-color, #155e75);
+  caret-color: var(--atm-color, #155e75);
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 0;
+  width: var(--width, 7ch); /* small, tweak via prop */
+  text-align: center; /* center the typed text */
+}
+.field::placeholder {
+  color: transparent;
+}

@@ -1,0 +1,29 @@
+.atmBody {
+  border-top: solid #b9b9b9;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+  width: 355px;
+}
+
+.atmBottom {
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.atmStickerGraf {
+  position: relative;
+  bottom: 25%;
+  right: 20%;
+  width: 75%;
+}
+
+.atmSystems {
+  width: 54px;
+  height: 6px;
+}
