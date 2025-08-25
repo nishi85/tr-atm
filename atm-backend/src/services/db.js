@@ -4,8 +4,8 @@ const SEED_ACCOUNTS = [
   ["2222", { holder: "Sam Park", cardType: "mastercard", balance: 1250.0 }],
   ["3333", { holder: "Jamie Wu", cardType: "star", balance: 430.44 }],
   ["4444", { holder: "Taylor Li", cardType: "interac", balance: 199.9 }],
-  ["5555", { holder: "Taylor Li", cardType: "maestro", balance: 0.0 }],
-  ["6666", { holder: "Taylor Li", cardType: "pulse", balance: 200.0 }],
+  ["5555", { holder: "Bruce Banner", cardType: "maestro", balance: 0.0 }],
+  ["6666", { holder: "Jessica Bolt", cardType: "pulse", balance: 200.0 }],
 ];
 
 export let accounts = new Map(SEED_ACCOUNTS);
